@@ -1,0 +1,12 @@
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\NotificationSender.exe.config
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\NotificationSender.exe
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\NotificationSender.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\Newtonsoft.Json.dll
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\WebApiDoodle.Net.Http.Formatting.dll
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\Newtonsoft.Json.xml
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\bin\Debug\WebApiDoodle.Net.Http.Formatting.xml
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\obj\Debug\NotificationSender.csprojResolveAssemblyReference.cache
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\obj\Debug\NotificationSender.exe
+c:\users\dverma\documents\visual studio 2015\Projects\NotificationSender\NotificationSender\obj\Debug\NotificationSender.pdb

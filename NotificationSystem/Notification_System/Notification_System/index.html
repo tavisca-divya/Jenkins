@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .glyphicon {
+            font-size: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" text-align="center" href="#">MY PROFILE</a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+                <div class="dropdown">
+                    <button class="glyphicon glyphicon-user" type="button" data-toggle="dropdown" onclick="getAllNotifications()"></button>
+
+                    <badge><span id="notification-counter"></span></badge>
+                    
+                        <ul style="max-height:100px; overflow-y:scroll" class="dropdown-menu" id="dropdown-menu"></ul>
+                  
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <button class="glyphicon glyphicon-envelope"></button>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <button class="glyphicon glyphicon-wrench"></button>
+            </div>
+            <div class="col-md-3 col-md-3">
+                <button onclick ="logmeout()" class="glyphicon glyphicon-log-out"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function logmeout()
+        {
+            window.location = "LoginPage.html";
+        }
+
+        $(document).ready(function () {
+
+            !function getNotifications() {
+                setTimeout(function f() {
+                    $.ajax({
+                        url: "http://localhost:53093/api/subscribers/count/"+localStorage.user,
+                        success: function (result) {
+                            $("#notification-counter").html(result);
+                            getNotifications();
+                        }
+                    });
+                }, 1000);
+            }();
+        })
+
+        function getAllNotifications() {
+            var Unread = document.getElementById("notification-counter").innerHTML;
+            var x = 1;
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:53093/api/Subscribers/Get',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var nod = document.getElementById("dropdown-menu");
+                    while (nod.hasChildNodes())
+                        nod.removeChild(nod.lastChild);
+                    $.each(response, function (key, data) {
+                        if (x <= Unread)
+                            $("#dropdown-menu").append($("<li style=\"background-color:#2d2d2d; color:white;\">").text(data.Notification));
+                        else
+                            $("#dropdown-menu").append($("<li>").text(data.Notification));
+                        x++;
+                    });
+                }
+            });
+            reset();
+        }
+        function reset() {
+
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:53093/api/Subscribers/ResetCount/'+localStorage.user,
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+
+                    $("#notification-counter").html(response.UnreadCount);
+
+                }
+            });
+        }
+
+
+    </script>
+</body>
+</html>

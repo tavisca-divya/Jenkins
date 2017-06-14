@@ -1,0 +1,16 @@
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\BusinessLayer.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\BusinessLayer.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\Model.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\Model.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\obj\Debug\BusinessLayer.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\obj\Debug\BusinessLayer.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\Provider_Layer.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Driver.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Driver.Core.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Bson.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\Provider_Layer.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Driver.xml
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Driver.Core.xml
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\BusinessLayer\bin\Debug\MongoDB.Bson.xml

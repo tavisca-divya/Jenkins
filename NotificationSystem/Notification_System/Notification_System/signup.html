@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a style="color: aqua" class="navbar-brand" text-align="center" href="#">Sign Up</a>
+            </div>
+         
+          <div class="glyphicon glyphicon-log-in col-md-8 container lead">
+                <label><b style="color: aqua">User : </b></label>
+                <input pattern="^[a-zA-z]{5,}$" data-match-error="numbers and special characters not allowed" type="text" id="username" placeholder="Enter Name" name="uname" required>
+
+                <label><b style="color: aqua">Password : </b></label>
+                <input pattern="^[a-zA-z0-9'@&#.\s]{5,16}$" type="password" id="Pswrd" data-match-error="Whoops, max 16 characters allowed!" placeholder="Enter Password" name="psw" required>
+
+                <button id="signup" onclick="Validate()">Sign Up</button>
+
+            </div>
+            <div>
+                <button onclick="login()" class="glyphicon glyphicon-log-in col-md-offset-3" style="font-size: 50px;"></button>
+            </div>
+        </div>
+     
+    </nav>
+    
+    <script>
+        var nullCheck = 0;
+        function login()
+        {
+            window.location = "http://localhost:53093/LoginPage.html";
+        }
+        function Validate()
+        {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("Pswrd").value;
+            if (username == "" || password == "") {
+                nullCheck = 1;
+                alert("Field is empty!");
+            }
+            else {
+                var Subscriber = {
+                    UserName: username,
+                    password: password
+                }
+            };
+            if (nullCheck == 0) {
+                $.ajax({
+                    url: "http://localhost:53093/api/Subscribers/post",
+                    method: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(Subscriber),
+                    crossDomain: true,
+                    success: function (response) {
+                        localStorage.user = username;
+                        window.location = "index.html";
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

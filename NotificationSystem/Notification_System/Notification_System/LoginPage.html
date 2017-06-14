@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn</title>
+    <!--// <meta charset="utf-8" />-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a style="color: aqua" class="navbar-brand" text-align="center"  href="#">LOG IN</a>
+            </div>
+
+            <div class="container lead glyphicon-log-in col-md-8">
+                <label><b style="color: aqua">User : </b></label>
+                <input type="text" id="name" placeholder="Enter Name" name="uname" required>
+
+                <label><b style="color: aqua">Password : </b></label>
+                <input type="password" id="Pswrd" placeholder="Enter Password" name="psw" required>
+
+                <button id="login" onclick="Validate()">Login</button>
+
+            </div>
+            <div>
+                <button onclick="signUp()" class="glyphicon glyphicon-new-window col-md-offset-3" style="font-size: 50px;"></button>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function signUp(){
+            window.location = "http://localhost:53093/signup.html";
+        }
+        function Validate() {
+            jQuery.support.cors = true;
+            var user = {
+
+                UserName: document.getElementById('name').value,
+                Password: document.getElementById('Pswrd').value
+
+            };
+            $.ajax({
+                url: 'http://localhost:53093/api/Subscribers/Validate',
+                method: 'POST',
+                contentType: 'application/json;charset=utf-8',
+                data: JSON.stringify(user),
+                success: function (response) {
+                    localStorage.user = user.UserName;
+                    window.location = "index.html";
+
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

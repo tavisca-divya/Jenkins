@@ -1,0 +1,14 @@
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\Provider_Layer.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\Provider_Layer.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\Model.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Bson.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Driver.Core.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Driver.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\Model.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Bson.xml
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Driver.xml
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\bin\Debug\MongoDB.Driver.Core.xml
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\obj\Debug\Provider_Layer.csprojResolveAssemblyReference.cache
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\obj\Debug\Provider_Layer.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Provider_Layer\obj\Debug\Provider_Layer.pdb

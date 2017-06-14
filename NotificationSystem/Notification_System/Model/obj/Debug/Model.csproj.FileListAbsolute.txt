@@ -1,0 +1,12 @@
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Model\bin\Debug\Model.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Model\bin\Debug\Model.pdb
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Model\obj\Debug\Model.dll
+c:\users\dverma\documents\visual studio 2015\Projects\Notification_System\Model\obj\Debug\Model.pdb
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Bson.dll
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Driver.dll
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Bson.xml
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Driver.xml
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\dverma\Documents\Visual Studio 2015\Projects\Notification_System\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
